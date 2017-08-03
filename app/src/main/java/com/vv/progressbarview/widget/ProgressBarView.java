@@ -74,6 +74,7 @@ public class ProgressBarView extends View{
     private int progressColor=0xFFf66b12;//progrss颜色
     private int tipColor=0xFFf66b12;//tip的颜色
     private int textColor=Color.WHITE;//text颜色
+    private int tipSideColor=Color.WHITE;//提示框描边的颜色
     public ProgressBarView(Context context) {
         super(context);
     }
@@ -103,6 +104,7 @@ public class ProgressBarView extends View{
         tipColor = typedArray.getColor(R.styleable.ProgressBarView_tipColor, tipColor);
         bgColor = typedArray.getColor(R.styleable.ProgressBarView_progressBgColor, bgColor);
         textColor = typedArray.getColor(R.styleable.ProgressBarView_textColor, textColor);
+        tipColor = typedArray.getColor(R.styleable.ProgressBarView_tipColor, tipColor);
 
         duration = typedArray.getInteger(R.styleable.ProgressBarView_duration, duration);
 
@@ -153,7 +155,7 @@ public class ProgressBarView extends View{
         bgPaint=getPaint(progressPaintWidth,bgColor,Paint.Style.STROKE);
         progressPaint=getPaint(progressPaintWidth,progressColor, Paint.Style.STROKE);
         tipPaint=getPaint(tipPaintWidth,tipColor, Paint.Style.FILL);
-        tipRectPaint=getPaint(tipPaintWidth,progressColor, Paint.Style.STROKE);
+        tipRectPaint=getPaint(tipPaintWidth,tipColor, Paint.Style.STROKE);
 
         initTextPaint();
     }
