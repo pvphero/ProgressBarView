@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressBarView">
+        <attr name="progressBgColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="tipColor" format="color" />
+        <attr name="textColor" format="color"></attr>
+
+        <attr name="tipHeight" format="dimension"></attr>
+        <attr name="tipWidth" format="dimension"></attr>
+        <attr name="roundRectRadius" format="dimension"></attr>
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="progressPaintWidth" format="dimension"></attr>
+        <attr name="triangleHeight" format="dimension"></attr>
+        <attr name="progressMarginTop" format="dimension"></attr>
+
+        <attr name="duration" format="integer"></attr>
+    </declare-styleable>
+</resources>
